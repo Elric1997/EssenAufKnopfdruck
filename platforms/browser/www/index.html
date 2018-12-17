@@ -5,15 +5,41 @@
         <meta name="format-detection" content="telephone=no">
         <meta name="msapplication-tap-highlight" content="no">
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
-        <link rel="stylesheet" type="text/css" href="css/index.css">
         <title>Essen auf Knopfdruck</title>
+        <!-- Path to Framework7 Library CSS -->
+        <link rel="stylesheet" href="css/framework7.min.css">
     </head>
     <body>
-        <h1>Essen auf Knopfdruck</h1>       
-        
-            
-        <input type="button" id="randome" value="Click me">
+        <!-- No additional classes, all elements will have "fade" effect on page transition -->
+        <div class="navbar">
+            <div class="navbar-inner">
+                <div class="title">Essen Auf Knopfdruck</div>
+            </div>
+        </div>
+        <div class="page" data-name="home">
+            <div class="page-content">
+                <div class="block">
+                    <p class="row">
+                        <button class="col button button-big button-fill" id="randome">Neues Essen</button>
+                    </p>
+                    <p class="row">
+                            <h1>Dein Heutiges essen:</h1>
+                    </p>
+                    <p class="row">
+                            <h1 id="essen_card"></h1>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Path to Framework7 Library JS-->
+        <script type="text/javascript" src="js/framework7.min.js"></script>
+        <!-- Path to Cordova Library JS-->
         <script type="text/javascript" src="cordova.js"></script>
+        <!-- Path to index JS-->
         <script type="text/javascript" src="js/index.js"></script>
+        <!-- Path to your app js-->
+        <script type="text/javascript" src="js/my-app.js"></script>
     </body>
 </html>
