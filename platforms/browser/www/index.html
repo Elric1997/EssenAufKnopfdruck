@@ -7,31 +7,46 @@
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
         <title>Essen auf Knopfdruck</title>
         <!-- Path to Framework7 Library CSS -->
+        <link rel="stylesheet" href="css/index.css">
         <link rel="stylesheet" href="css/framework7.min.css">
     </head>
     <body>
-        <!-- No additional classes, all elements will have "fade" effect on page transition -->
-        <div class="navbar">
-            <div class="navbar-inner">
-                <div class="title">Essen Auf Knopfdruck</div>
-            </div>
-        </div>
-        <div class="page" data-name="home">
-            <div class="page-content">
-                <div class="block">
-                    <p class="row">
-                        <button class="col button button-big button-fill" id="randome">Neues Essen</button>
-                    </p>
-                    <p class="row">
-                            <h1>Dein Heutiges essen:</h1>
-                    </p>
-                    <p class="row">
-                            <h1 id="essen_card"></h1>
-                    </p>
+        <!-- App root element -->
+        <div id="app">
+            <!-- Statusbar overlay -->
+            <div class="statusbar"></div>
+    
+            <!-- Your main view, should have "view-main" class -->
+            <div class="view view-main">
+            <!-- Initial Page, "data-name" contains page name -->
+            <div data-name="home" class="page">
+    
+                <!-- Top Navbar -->
+                <div class="navbar">
+                    <div class="navbar-inner">
+                        <div class="title">Home</div>
+                    </div>
+                </div>
+    
+                <!-- Scrollable page content -->
+                <div class="page-content">
+                        <div class="card">
+                                <div class="card-header">Header</div>
+                                <div class="card-content card-content-padding">
+                                  <!-- Card content -->
+                                </div>
+                                <div class="card-footer">Footer</div>
+                              </div>
+                        <div class="row">
+                                <!-- Each "cell" has col-[width in percents] class -->
+                                <div class="col-33"></div>
+                                <div class="col-33"><button class="col button button-outline my-btn">Go!</button></div>
+                                <div class="col-33"></div>
+                            </div>
                 </div>
             </div>
+            </div>
         </div>
-
 
         <!-- Path to Framework7 Library JS-->
         <script type="text/javascript" src="js/framework7.min.js"></script>

@@ -2,9 +2,9 @@ var app = new Framework7({
     // App root element
     root: '#app',
     // App Name
-    name: 'My App',
+    name: 'EssenAufKnopfdruck',
     // App id
-    id: 'com.myapp.test',
+    id: 'de.apps.eakd',
     // Enable swipe panel
     panel: {
       swipe: 'left',
@@ -16,7 +16,7 @@ var app = new Framework7({
         url: 'about.html',
       },
     ],
-    // ... other parameters
+    version: "0.1.12.18"
   });
   
   var mainView = app.views.create('.view-main');
